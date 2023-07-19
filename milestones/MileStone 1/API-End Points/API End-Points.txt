@@ -1,0 +1,34 @@
+Authentication Endpoints:
+POST /api/auth/register: Register a new user.
+POST /api/auth/login: User login to obtain an authentication token.
+GET /api/auth/logout: User logout and invalidate the authentication token.
+GET /api/auth/user: Retrieve user details based on the authenticated token.
+User Endpoints:
+GET /api/users: Retrieve a list of all users (admin access required).
+GET /api/users/:id: Retrieve a specific user by ID (admin access required).
+PUT /api/users/:id: Update user details (admin access required).
+DELETE /api/users/:id: Delete a user (admin access required).
+Movie Endpoints:
+GET /api/movies: Retrieve a list of all movies.
+GET /api/movies/:id: Retrieve a specific movie by ID.
+POST /api/movies: Create a new movie (admin access required).
+PUT /api/movies/:id: Update movie details (admin access required).
+DELETE /api/movies/:id: Delete a movie (admin access required).
+Show Endpoints:
+GET /api/shows: Retrieve a list of all shows.
+GET /api/shows/:id: Retrieve a specific show by ID.
+POST /api/shows: Create a new show (admin access required).
+PUT /api/shows/:id: Update show details (admin access required).
+DELETE /api/shows/:id: Delete a show (admin access required).
+Event Endpoints:
+GET /api/events: Retrieve a list of all events.
+GET /api/events/:id: Retrieve a specific event by ID.
+POST /api/events: Create a new event (admin access required).
+PUT /api/events/:id: Update event details (admin access required).
+DELETE /api/events/:id: Delete an event (admin access required).
+Participant Endpoints:
+GET /api/participants: Retrieve a list of all participants (admin access required).
+GET /api/participants/:id: Retrieve a specific participant by ID (admin access required).
+POST /api/participants: Add a new participant to an event (user access).
+PUT /api/participants/:id: Update participant details (admin access required).
+DELETE /api/participants/:id: Remove a participant from an event (admin access required).
