@@ -1,0 +1,14 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+
+# Configuration files with sensitive information (modify as per your project)
+config.py
+.env
