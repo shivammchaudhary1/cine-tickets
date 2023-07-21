@@ -1,6 +1,14 @@
 from pymongo import MongoClient
 from config import MONGO_URI
 
+
+# database.py
+
+# from pymongo import MongoClient
+# from config import MONGO_URI
+
+# # Rest of the code...
+
 # Connect to MongoDB and create a database connection
 
 
