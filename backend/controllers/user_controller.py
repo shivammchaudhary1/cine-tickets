@@ -1,3 +1,4 @@
+# user_controller.py
 from flask import request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from models.user_model import User
@@ -9,7 +10,10 @@ from database import get_users_collection
 def register_user():
     data = request.get_json()
     username = data.get('username')
+    name = data.get('name')
+    age = data.get('age')
     email = data.get('email')
+    mobile = data.get('mobile')
     password = data.get('password')
 
     # Check if the user already exists in the database
@@ -20,7 +24,8 @@ def register_user():
 
     # Create a new user instance and hash the password
     hashed_password = generate_password_hash(password, method='sha256')
-    new_user = User(username=username, email=email, password=hashed_password)
+    new_user = User(name=name, age=age, email=email, mobile=mobile,
+                    password=hashed_password, username=username)
 
     # Insert the new user into the database
     users_collection.insert_one(new_user.to_dict())

@@ -1,3 +1,4 @@
+# user_routes.py
 from flask import Blueprint, request, jsonify
 from controllers.user_controller import register_user, login_user, get_user_details
 
