@@ -10,3 +10,5 @@ class User(Document):
     email = StringField(required=True, unique=True)
     mobile = IntField()
     password = StringField(required=True)
+    event_id = StringField()  # Empty initially
+    movie_id = StringField()  # Empty initially
