@@ -24,3 +24,4 @@ def login():
 @user_bp.route('/<string:user_id>', methods=['GET'])
 def get_user(user_id):
     return get_user_details(user_id)
+
